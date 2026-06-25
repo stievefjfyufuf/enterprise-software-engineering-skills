@@ -1,0 +1,4 @@
+interface:
+  display_name: "Change Log dan Engineering Loop"
+  short_description: "Change request dan baseline control."
+  default_prompt: "Use this skill to mengatur perubahan tanpa merusak baseline prd, design, code, test, atau app yang sudah stabil."

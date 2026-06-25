@@ -1,0 +1,4 @@
+interface:
+  display_name: "Specification"
+  short_description: "Requirement, story, acceptance criteria."
+  default_prompt: "Use this skill to membuat requirement terstruktur dan dapat diuji."

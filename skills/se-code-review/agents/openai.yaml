@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Review"
+  short_description: "Review diff, risiko, dan test."
+  default_prompt: "Use this skill to memeriksa code dan test sebelum masuk testing lebih luas."

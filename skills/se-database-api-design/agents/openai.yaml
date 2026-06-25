@@ -1,0 +1,4 @@
+interface:
+  display_name: "Database dan API Design"
+  short_description: "ERD, tabel, dan API contract."
+  default_prompt: "Use this skill to membuat database dan api contract yang traceable."

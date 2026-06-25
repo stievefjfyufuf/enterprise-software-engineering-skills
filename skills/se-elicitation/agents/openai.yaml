@@ -1,0 +1,4 @@
+interface:
+  display_name: "Elicitation"
+  short_description: "Pertanyaan dan kebutuhan stakeholder."
+  default_prompt: "Use this skill to menyusun pertanyaan dan menemukan kebutuhan stakeholder."

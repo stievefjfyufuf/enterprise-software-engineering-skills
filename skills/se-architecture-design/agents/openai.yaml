@@ -1,0 +1,4 @@
+interface:
+  display_name: "Architecture Design"
+  short_description: "Arsitektur, komponen, dan ADR."
+  default_prompt: "Use this skill to menentukan bagian utama aplikasi dan keputusan arsitektur."

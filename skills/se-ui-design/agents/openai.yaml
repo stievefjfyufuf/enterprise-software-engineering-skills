@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Design"
+  short_description: "Screen, navigasi, form, wireframe."
+  default_prompt: "Use this skill to membuat rancangan ui yang sesuai kebutuhan pengguna."

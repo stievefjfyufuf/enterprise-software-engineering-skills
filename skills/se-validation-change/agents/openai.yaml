@@ -1,0 +1,4 @@
+interface:
+  display_name: "Validation dan Change"
+  short_description: "Validasi requirement dan change awal."
+  default_prompt: "Use this skill to memeriksa requirement dan menganalisis perubahan awal."

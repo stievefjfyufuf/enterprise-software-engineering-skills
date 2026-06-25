@@ -1,0 +1,4 @@
+interface:
+  display_name: "Issue Planning"
+  short_description: "Issue teknis siap dikerjakan."
+  default_prompt: "Use this skill to mengubah requirement dan design menjadi task implementasi."

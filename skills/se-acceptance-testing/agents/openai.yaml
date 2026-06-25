@@ -1,0 +1,4 @@
+interface:
+  display_name: "Acceptance Testing"
+  short_description: "UAT dan validasi user flow."
+  default_prompt: "Use this skill to menguji apakah user flow lengkap diterima."

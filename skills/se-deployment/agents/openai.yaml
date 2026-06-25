@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deployment"
+  short_description: "Release, deploy, dan smoke test."
+  default_prompt: "Use this skill to mempublikasikan aplikasi dan memeriksa hasilnya."

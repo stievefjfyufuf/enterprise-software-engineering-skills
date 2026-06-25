@@ -1,0 +1,4 @@
+interface:
+  display_name: "Implementation"
+  short_description: "Implementasi satu issue."
+  default_prompt: "Use this skill to mengerjakan satu issue menjadi perubahan code yang terkontrol."

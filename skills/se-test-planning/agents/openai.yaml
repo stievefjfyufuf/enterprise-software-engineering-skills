@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test Planning"
+  short_description: "Strategi dan skenario test."
+  default_prompt: "Use this skill to membuat rencana pengujian yang traceable."

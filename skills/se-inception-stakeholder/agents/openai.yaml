@@ -1,0 +1,4 @@
+interface:
+  display_name: "Inception dan Stakeholder"
+  short_description: "Discovery awal stakeholder dan scope."
+  default_prompt: "Use this skill to memahami masalah, tujuan, stakeholder, scope, asumsi, dan pertanyaan terbuka."

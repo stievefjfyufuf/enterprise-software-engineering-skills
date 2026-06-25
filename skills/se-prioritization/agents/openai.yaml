@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prioritization"
+  short_description: "Prioritas backlog dan konflik."
+  default_prompt: "Use this skill to menentukan prioritas dan menyelesaikan konflik kebutuhan."

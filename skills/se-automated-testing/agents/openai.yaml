@@ -1,0 +1,4 @@
+interface:
+  display_name: "Automated Testing"
+  short_description: "Unit dan integration test."
+  default_prompt: "Use this skill to membuat dan menjalankan automated tests yang relevan."
