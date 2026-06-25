@@ -6,15 +6,19 @@ Gunakan saat struktur aplikasi, component boundary, integration, deployment shap
 
 ## Required Inputs
 
-Read the parent SKILL.md first, then confirm the available inputs match the skill purpose. If an input is missing, infer conservatively from project context or list it as an open question.
+- Validated requirements and NFRs.
+- Expected scale, security/compliance constraints, integration needs, and deployment target.
+- Existing repo/platform constraints if the project already has code.
 
 ## Step Procedure
 
-1. Review the current project artifact from the previous step.
-2. Identify the smallest useful output this step must produce.
-3. Preserve traceability to stakeholder goals, requirements, issues, tests, or change requests.
-4. Call out enterprise concerns when relevant: risk, ownership, dependency, security, compliance, data integrity, observability, migration, rollback, and maintainability.
-5. Prepare a handoff artifact for the next numbered skill.
+1. Choose the simplest architecture style that satisfies requirements and NFRs; justify microservices only when the tradeoff is necessary.
+2. Define components, responsibilities, ownership, boundaries, and communication patterns.
+3. Map critical flows from user action to data storage and external integrations.
+4. Record architecture decisions as `ADR-###` with context, decision, options considered, consequences, and rollback/migration impact.
+5. Identify security, data integrity, observability, scalability, maintainability, and deployment risks.
+6. Link each major component or decision to driving `REQ` or `NFR`.
+7. Send component map and data flow to `07-se-database-api-design`.
 
 ## Output Template
 
@@ -42,6 +46,21 @@ Consequences:
 Tradeoffs:
 
 ## Risks
+```
+
+## Traceability IDs
+
+- Use `ADR-###` for architecture decisions.
+- Use `COMP-###` for components when the system has more than a few modules.
+- Link every `ADR` to relevant `REQ` or `NFR`.
+
+## Mini Example
+
+```markdown
+### ADR-001: Use modular monolith for MVP
+Context: REQ-001 to REQ-006 need shared data and small-team delivery.
+Decision: Build one deployable app with separated inventory, request, and admin modules.
+Consequences: Lower deployment complexity now; revisit service split after clear scaling pressure.
 ```
 
 ## Quality Checklist

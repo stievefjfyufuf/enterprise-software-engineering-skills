@@ -1,5 +1,5 @@
 ---
-name: 13-13-se-automated-testing
+name: 13-se-automated-testing
 description: Membuat unit test dan integration test. Use when adding or updating automated tests, verifying features or bug fixes, covering API/database/UI logic, improving regression coverage, or running test suites after implementation.
 ---
 

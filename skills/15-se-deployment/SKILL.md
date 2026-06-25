@@ -1,5 +1,5 @@
 ---
-name: 15-15-se-deployment
+name: 15-se-deployment
 description: Mempublikasikan aplikasi dan memeriksa hasilnya. Use when preparing release, deployment checklist, environment configuration, CI/CD verification, database migration rollout, smoke tests, rollback plan, release notes, and post-deploy validation.
 ---
 

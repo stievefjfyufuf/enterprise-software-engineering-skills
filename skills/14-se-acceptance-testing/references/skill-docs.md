@@ -6,15 +6,19 @@ Gunakan saat alur lengkap pengguna perlu divalidasi sebelum deploy atau ketika s
 
 ## Required Inputs
 
-Read the parent SKILL.md first, then confirm the available inputs match the skill purpose. If an input is missing, infer conservatively from project context or list it as an open question.
+- Acceptance criteria, user flow, implemented feature, and automated test results.
+- Deployment candidate or local/staging environment.
+- Stakeholder role or acceptance owner when available.
 
 ## Step Procedure
 
-1. Review the current project artifact from the previous step.
-2. Identify the smallest useful output this step must produce.
-3. Preserve traceability to stakeholder goals, requirements, issues, tests, or change requests.
-4. Call out enterprise concerns when relevant: risk, ownership, dependency, security, compliance, data integrity, observability, migration, rollback, and maintainability.
-5. Prepare a handoff artifact for the next numbered skill.
+1. Convert each acceptance criterion into a UAT checklist item with `UAT-###` ID.
+2. Execute the main user journey, important edge cases, permission checks, and failure states.
+3. Capture evidence: environment, account/role, data used, command/browser result, screenshot/log reference when available.
+4. Mark each item pass, fail, blocked, or not tested with reason.
+5. Separate defects from stakeholder feedback or new change requests.
+6. Decide accepted, rejected, accepted with follow-up, or blocked.
+7. If accepted, send to `15-se-deployment`; if rejected or new scope appears, send to `16-se-change-log-engineering-loop`.
 
 ## Output Template
 
@@ -38,6 +42,22 @@ Read the parent SKILL.md first, then confirm the available inputs match the skil
 Accepted / Accepted with Notes / Rejected
 
 ## Follow-up
+```
+
+## Traceability IDs
+
+- Use `UAT-###` for acceptance checklist items.
+- Link each `UAT` to `AC`, `REQ`, `ISSUE`, and `TEST` where possible.
+
+## Mini Example
+
+```markdown
+## UAT Checklist
+- [x] UAT-001 / AC-001: Admin can view overdue equipment.
+- [ ] UAT-002 / AC-002: Non-admin is denied access.
+
+## Decision
+Rejected until UAT-002 passes.
 ```
 
 ## Quality Checklist

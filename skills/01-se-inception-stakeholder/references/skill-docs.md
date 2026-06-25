@@ -6,15 +6,20 @@ Gunakan saat proyek baru dimulai, ide aplikasi masih kasar, scope belum jelas, a
 
 ## Required Inputs
 
-Read the parent SKILL.md first, then confirm the available inputs match the skill purpose. If an input is missing, infer conservatively from project context or list it as an open question.
+- App idea or business problem.
+- Target users or customer segment.
+- Known constraints such as deadline, budget, platform, compliance, or team size.
+- Any existing notes, pitch, assignment brief, or product context.
 
 ## Step Procedure
 
-1. Review the current project artifact from the previous step.
-2. Identify the smallest useful output this step must produce.
-3. Preserve traceability to stakeholder goals, requirements, issues, tests, or change requests.
-4. Call out enterprise concerns when relevant: risk, ownership, dependency, security, compliance, data integrity, observability, migration, rollback, and maintainability.
-5. Prepare a handoff artifact for the next numbered skill.
+1. Restate the problem without jumping directly to a solution.
+2. Identify stakeholder groups and assign stable IDs such as `STK-001`.
+3. Separate business goals, user goals, and technical goals with IDs such as `GOAL-001`.
+4. Define in-scope, out-of-scope, assumptions, constraints, and success signals.
+5. Record unresolved questions that must be answered during elicitation.
+6. Call out early enterprise concerns: ownership, compliance, security, data sensitivity, dependencies, and operational risk.
+7. Prepare a handoff artifact for `02-se-elicitation`.
 
 ## Output Template
 
@@ -43,6 +48,27 @@ Read the parent SKILL.md first, then confirm the available inputs match the skil
 ## Constraints
 
 ## Open Questions
+```
+
+## Traceability IDs
+
+- Use `STK-###` for stakeholders.
+- Use `GOAL-###` for goals.
+- Use `ASSUMP-###` for assumptions when they affect scope or risk.
+
+## Mini Example
+
+```markdown
+## Primary Problem
+Lab staff cannot reliably track who borrowed equipment and when it should be returned.
+
+## Goals
+- GOAL-001: Reduce lost equipment by improving borrow/return visibility.
+
+## Stakeholders
+| Stakeholder | Role | Needs | Influence | Notes |
+|---|---|---|---|---|
+| STK-001 Lab Admin | Operational owner | Approve requests and audit inventory | High | Owns daily workflow |
 ```
 
 ## Quality Checklist

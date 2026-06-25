@@ -1,5 +1,5 @@
 ---
-name: 06-06-se-architecture-design
+name: 06-se-architecture-design
 description: Menentukan bagian utama aplikasi dan keputusan arsitektur. Use when designing system structure, modules, components, service boundaries, deployment shape, quality attributes, architecture decisions, or tradeoffs before database/API/UI design.
 ---
 

@@ -6,15 +6,19 @@ Gunakan saat satu issue siap dikerjakan menjadi perubahan code yang scoped.
 
 ## Required Inputs
 
-Read the parent SKILL.md first, then confirm the available inputs match the skill purpose. If an input is missing, infer conservatively from project context or list it as an open question.
+- Selected issue with acceptance checklist and traceability IDs.
+- Repo context, local patterns, architecture/design/API/UI specs.
+- Migration/config expectations and test expectations.
 
 ## Step Procedure
 
-1. Review the current project artifact from the previous step.
-2. Identify the smallest useful output this step must produce.
-3. Preserve traceability to stakeholder goals, requirements, issues, tests, or change requests.
-4. Call out enterprise concerns when relevant: risk, ownership, dependency, security, compliance, data integrity, observability, migration, rollback, and maintainability.
-5. Prepare a handoff artifact for the next numbered skill.
+1. Read the relevant repo structure, existing patterns, tests, and ownership boundaries before editing.
+2. Confirm the issue scope and list explicit out-of-scope behavior.
+3. Make the smallest cohesive code change that satisfies the acceptance checklist.
+4. Preserve existing behavior unless the issue or change request explicitly approves the change.
+5. Add migrations/config changes only when required and document rollback or compatibility impact.
+6. Run focused verification where possible and record commands/results.
+7. Send diff and implementation notes to `11-se-code-review`.
 
 ## Output Template
 
@@ -37,6 +41,27 @@ Read the parent SKILL.md first, then confirm the available inputs match the skil
 ## Manual Verification
 
 ## Risks
+```
+
+## Traceability IDs
+
+- Keep the selected `ISSUE` ID in implementation notes.
+- Reference changed behavior back to `REQ`, `AC`, and `CR` when applicable.
+
+## Mini Example
+
+```markdown
+## Issue
+ISSUE-001 linked to REQ-001 and AC-001.
+
+## Files Changed
+| File | Reason |
+|---|---|
+| src/features/equipment/overdue.ts | Implements overdue filtering for API-001 |
+
+## Manual Verification
+Command: npm test -- overdue
+Result: Pass
 ```
 
 ## Quality Checklist

@@ -6,15 +6,19 @@ Gunakan saat test strategy, scenario, coverage matrix, test data, dan regression
 
 ## Required Inputs
 
-Read the parent SKILL.md first, then confirm the available inputs match the skill purpose. If an input is missing, infer conservatively from project context or list it as an open question.
+- Requirements, acceptance criteria, selected issue, implementation notes, and review findings.
+- Architecture/API/UI/data risk notes.
+- Existing test pyramid, framework, fixtures, and CI constraints.
 
 ## Step Procedure
 
-1. Review the current project artifact from the previous step.
-2. Identify the smallest useful output this step must produce.
-3. Preserve traceability to stakeholder goals, requirements, issues, tests, or change requests.
-4. Call out enterprise concerns when relevant: risk, ownership, dependency, security, compliance, data integrity, observability, migration, rollback, and maintainability.
-5. Prepare a handoff artifact for the next numbered skill.
+1. Map every acceptance criterion to at least one scenario.
+2. Classify tests as unit, integration, API, UI/e2e, manual, regression, security, or migration checks.
+3. Prioritize high-risk behavior, permissions, data boundaries, error handling, and rollback-sensitive paths.
+4. Define test data, fixtures, setup/teardown, and external service handling.
+5. Include negative cases, edge cases, and regression checks for nearby behavior.
+6. Identify what cannot be automated yet and why.
+7. Send test plan to `13-se-automated-testing`.
 
 ## Output Template
 
@@ -35,6 +39,20 @@ Read the parent SKILL.md first, then confirm the available inputs match the skil
 ## Manual Verification Needed
 
 ## Risks
+```
+
+## Traceability IDs
+
+- Use `TEST-###` for planned test scenarios.
+- Map each `TEST` to `AC`, `REQ`, and `ISSUE`.
+
+## Mini Example
+
+```markdown
+| Test ID | Acceptance Criteria | Type | Scenario | Data Needed |
+|---|---|---|---|---|
+| TEST-001 | AC-001 | Integration | Admin sees overdue equipment only | overdue item, active borrower |
+| TEST-002 | AC-001 | Security | Non-admin cannot access overdue endpoint | non-admin user |
 ```
 
 ## Quality Checklist

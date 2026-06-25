@@ -1,5 +1,5 @@
 ---
-name: 10-10-se-implementation
+name: 10-se-implementation
 description: Mengerjakan satu issue menjadi code. Use when implementing a selected issue, modifying application code, adding features, fixing bugs, applying migrations, wiring UI/API behavior, or making scoped code changes from an approved task.
 ---
 

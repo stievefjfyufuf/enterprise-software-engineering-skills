@@ -6,15 +6,19 @@ Gunakan saat unit test, integration test, regression test, atau test run perlu d
 
 ## Required Inputs
 
-Read the parent SKILL.md first, then confirm the available inputs match the skill purpose. If an input is missing, infer conservatively from project context or list it as an open question.
+- Test plan with `TEST` IDs and mapped acceptance criteria.
+- Implementation diff and current repo test framework.
+- Fixtures, mocks, environment requirements, and CI constraints.
 
 ## Step Procedure
 
-1. Review the current project artifact from the previous step.
-2. Identify the smallest useful output this step must produce.
-3. Preserve traceability to stakeholder goals, requirements, issues, tests, or change requests.
-4. Call out enterprise concerns when relevant: risk, ownership, dependency, security, compliance, data integrity, observability, migration, rollback, and maintainability.
-5. Prepare a handoff artifact for the next numbered skill.
+1. Inspect existing test framework, naming conventions, fixtures, and CI commands.
+2. Implement the highest-risk planned tests first, matching the repo's style.
+3. Prefer deterministic fixtures and local mocks over external dependencies unless integration behavior is the target.
+4. Cover success path, important negative path, permissions, validation, and regression checks.
+5. Run focused tests first, then broader relevant suites when feasible.
+6. Record commands, pass/fail output, failures fixed, skipped tests, and remaining coverage gaps.
+7. If tests pass, send results to `14-se-acceptance-testing`; if tests expose a bug, route back to `10-se-implementation`.
 
 ## Output Template
 
@@ -35,6 +39,26 @@ Read the parent SKILL.md first, then confirm the available inputs match the skil
 ## Failures and Fixes
 
 ## Coverage Notes
+```
+
+## Traceability IDs
+
+- Keep `TEST-###` IDs from the test plan.
+- Link test files or test cases to `ISSUE`, `REQ`, and `AC`.
+
+## Mini Example
+
+```markdown
+## Tests Added/Updated
+| Test ID | File | Purpose |
+|---|---|---|
+| TEST-001 | tests/equipment-overdue.test.ts | Verifies admin overdue equipment list |
+
+## Commands Run
+- npm test -- equipment-overdue
+
+## Results
+Pass: 6 tests.
 ```
 
 ## Quality Checklist

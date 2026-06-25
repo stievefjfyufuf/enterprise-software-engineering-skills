@@ -6,15 +6,19 @@ Gunakan saat halaman, navigasi, form, state UI, wireframe, dan user flow perlu d
 
 ## Required Inputs
 
-Read the parent SKILL.md first, then confirm the available inputs match the skill purpose. If an input is missing, infer conservatively from project context or list it as an open question.
+- User stories, acceptance criteria, and priority order.
+- API contract, domain workflow, target users, and device/platform expectations.
+- Brand/design system constraints if they exist.
 
 ## Step Procedure
 
-1. Review the current project artifact from the previous step.
-2. Identify the smallest useful output this step must produce.
-3. Preserve traceability to stakeholder goals, requirements, issues, tests, or change requests.
-4. Call out enterprise concerns when relevant: risk, ownership, dependency, security, compliance, data integrity, observability, migration, rollback, and maintainability.
-5. Prepare a handoff artifact for the next numbered skill.
+1. Derive screens and flows from user goals and acceptance criteria.
+2. Assign screen/flow IDs such as `UI-001` and link them to `REQ`, `AC`, and `API` IDs.
+3. Define navigation, primary actions, secondary actions, form fields, validation messages, and permissions.
+4. Specify loading, empty, error, success, disabled, unauthorized, and destructive-action states.
+5. Include accessibility and responsive behavior notes when UI is user-facing.
+6. Call out data displayed, data submitted, and API dependency for each screen.
+7. Send screen specs and UI flow to `09-se-issue-planning`.
 
 ## Output Template
 
@@ -41,6 +45,24 @@ Read the parent SKILL.md first, then confirm the available inputs match the skil
 - Success:
 
 ## Wireframe Notes
+```
+
+## Traceability IDs
+
+- Use `UI-###` for screens, flows, or major UI states.
+- Link each `UI` item to `REQ`, `AC`, and relevant `API`.
+
+## Mini Example
+
+```markdown
+## Screen List
+| Screen | User Goal | Key Data | Linked IDs |
+|---|---|---|---|
+| UI-001 Overdue Equipment Dashboard | Admin reviews overdue items | equipment, borrower, dueDate | REQ-001, AC-001, API-001 |
+
+## UI States
+- Empty: show "No overdue equipment" and last updated time.
+- Error: show retry action and preserve filters.
 ```
 
 ## Quality Checklist

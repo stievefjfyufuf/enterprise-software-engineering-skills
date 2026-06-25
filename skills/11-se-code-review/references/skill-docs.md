@@ -6,15 +6,19 @@ Gunakan saat diff, PR, code change, migration, atau test perlu direview untuk bu
 
 ## Required Inputs
 
-Read the parent SKILL.md first, then confirm the available inputs match the skill purpose. If an input is missing, infer conservatively from project context or list it as an open question.
+- Code diff or changed files.
+- Selected issue, acceptance criteria, implementation notes, tests, and architecture/design constraints.
+- Risk notes for data, security, migration, performance, or compatibility.
 
 ## Step Procedure
 
-1. Review the current project artifact from the previous step.
-2. Identify the smallest useful output this step must produce.
-3. Preserve traceability to stakeholder goals, requirements, issues, tests, or change requests.
-4. Call out enterprise concerns when relevant: risk, ownership, dependency, security, compliance, data integrity, observability, migration, rollback, and maintainability.
-5. Prepare a handoff artifact for the next numbered skill.
+1. Review the diff against the issue scope and acceptance criteria first.
+2. Prioritize behavioral regressions, security flaws, data loss, migration risk, missing tests, and maintainability problems.
+3. Reference file/line when available and assign severity such as `P0`, `P1`, `P2`, or `P3`.
+4. Check whether implementation changed unrelated baseline behavior.
+5. Identify missing tests and residual risk even when approving.
+6. Decide: approve, approve with notes, request changes, or block.
+7. If approved, send to `12-se-test-planning`; if blocked, route back to `10-se-implementation`.
 
 ## Output Template
 
@@ -37,6 +41,21 @@ Read the parent SKILL.md first, then confirm the available inputs match the skil
 Approve / Request Changes / Block
 
 ## Notes
+```
+
+## Traceability IDs
+
+- Keep `ISSUE`, `REQ`, `AC`, and `CR` references in review notes.
+- Use `FINDING-###` for actionable review findings.
+
+## Mini Example
+
+```markdown
+## Findings
+- FINDING-001 [P1] src/api/equipment.ts:42 allows non-admin users to query overdue equipment.
+
+## Decision
+Request changes; security issue blocks testing.
 ```
 
 ## Quality Checklist

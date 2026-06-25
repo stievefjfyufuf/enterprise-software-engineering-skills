@@ -1,5 +1,5 @@
 ---
-name: 12-12-se-test-planning
+name: 12-se-test-planning
 description: Membuat rencana pengujian. Use when designing test strategy, test scenarios, coverage matrix, test data, risk-based testing, unit/integration/e2e scope, regression checks, and validation plan before writing automated tests.
 ---
 

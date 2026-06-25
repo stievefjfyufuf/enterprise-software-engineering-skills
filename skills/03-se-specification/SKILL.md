@@ -1,5 +1,5 @@
 ---
-name: 03-03-se-specification
+name: 03-se-specification
 description: Membuat functional requirement, non-functional requirement, user story, dan acceptance criteria. Use when converting elicited needs into structured requirements, PRD sections, user stories, acceptance criteria, constraints, and traceable specification artifacts.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: 11-11-se-code-review
+name: 11-se-code-review
 description: Memeriksa code, test, risiko, dan regresi. Use when reviewing diffs, pull requests, implementation changes, tests, migrations, security risks, performance issues, maintainability concerns, regressions, and missing coverage.
 ---
 

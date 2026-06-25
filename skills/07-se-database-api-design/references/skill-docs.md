@@ -6,15 +6,19 @@ Gunakan saat ERD, tabel, relasi, constraint, migration, endpoint, dan API contra
 
 ## Required Inputs
 
-Read the parent SKILL.md first, then confirm the available inputs match the skill purpose. If an input is missing, infer conservatively from project context or list it as an open question.
+- Architecture component map and data flow.
+- Validated requirements, user stories, NFRs, and acceptance criteria.
+- Security, tenancy, data retention, audit, and integration constraints.
 
 ## Step Procedure
 
-1. Review the current project artifact from the previous step.
-2. Identify the smallest useful output this step must produce.
-3. Preserve traceability to stakeholder goals, requirements, issues, tests, or change requests.
-4. Call out enterprise concerns when relevant: risk, ownership, dependency, security, compliance, data integrity, observability, migration, rollback, and maintainability.
-5. Prepare a handoff artifact for the next numbered skill.
+1. Derive entities from domain nouns and user workflows; avoid tables that exist only because an interface screen exists.
+2. Define tables, primary keys, foreign keys, cardinality, uniqueness, indexes, audit fields, and retention needs.
+3. Normalize for integrity, then denormalize only with a stated performance reason.
+4. Design API endpoints from use cases, not just CRUD tables.
+5. Specify auth/authorization, request schema, response schema, validation rules, error responses, pagination/filtering/sorting, and idempotency where relevant.
+6. Record migration, seed data, backward compatibility, and rollback notes.
+7. Send ERD/API contract to `08-se-ui-design` and `09-se-issue-planning`.
 
 ## Output Template
 
@@ -40,6 +44,24 @@ Read the parent SKILL.md first, then confirm the available inputs match the skil
 ## Migration Notes
 
 ## Security and Data Notes
+```
+
+## Traceability IDs
+
+- Use `DATA-###` for tables/entities.
+- Use `API-###` for API contract entries.
+- Link each `DATA` and `API` item to `REQ`, `NFR`, or `AC`.
+
+## Mini Example
+
+```markdown
+| Method | Path | Purpose | Auth | Request | Response |
+|---|---|---|---|---|---|
+| GET | /api/equipment/overdue | API-001: List overdue equipment for admins | Admin | query: page, status | items, borrower, dueDate |
+
+## Error Responses
+- 403 when user lacks admin role.
+- 422 when pagination params are invalid.
 ```
 
 ## Quality Checklist

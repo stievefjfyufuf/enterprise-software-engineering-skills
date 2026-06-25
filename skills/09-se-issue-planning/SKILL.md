@@ -1,5 +1,5 @@
 ---
-name: 09-09-se-issue-planning
+name: 09-se-issue-planning
 description: Mengubah requirement menjadi GitHub Issues atau task teknis. Use when breaking validated requirements and designs into implementation issues, tasks, subtasks, labels, dependencies, milestones, sprint backlog, or developer-ready work items.
 ---
 

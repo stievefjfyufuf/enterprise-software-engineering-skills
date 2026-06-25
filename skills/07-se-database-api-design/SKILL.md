@@ -1,5 +1,5 @@
 ---
-name: 07-07-se-database-api-design
+name: 07-se-database-api-design
 description: Membuat tabel database, relasi, dan endpoint API. Use when designing ERD, database tables, fields, relationships, constraints, migrations, REST or RPC endpoints, API contracts, request/response schemas, and integration boundaries.
 ---
 

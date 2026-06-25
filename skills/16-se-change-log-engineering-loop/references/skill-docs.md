@@ -6,15 +6,19 @@ Gunakan saat PRD, design, code, test, atau app sudah punya baseline lalu user me
 
 ## Required Inputs
 
-Read the parent SKILL.md first, then confirm the available inputs match the skill purpose. If an input is missing, infer conservatively from project context or list it as an open question.
+- User change request, defect report, stakeholder feedback, or production issue.
+- Current baseline artifacts: PRD/spec, design, code, tests, release/deployment notes.
+- Known affected IDs such as `REL`, `REQ`, `ISSUE`, `TEST`, or `UAT`.
 
 ## Step Procedure
 
-1. Review the current project artifact from the previous step.
-2. Identify the smallest useful output this step must produce.
-3. Preserve traceability to stakeholder goals, requirements, issues, tests, or change requests.
-4. Call out enterprise concerns when relevant: risk, ownership, dependency, security, compliance, data integrity, observability, migration, rollback, and maintainability.
-5. Prepare a handoff artifact for the next numbered skill.
+1. Assign `CR-###` and capture requester, request, reason, type, urgency, and baseline affected.
+2. Compare before/after behavior against the current baseline before proposing edits.
+3. Perform impact analysis across requirements, design, database/API, UI, issues, code, tests, acceptance, deployment, docs, and operations.
+4. Define approved scope and explicit not-in-scope items.
+5. Decide routing: specification/design issue, implementation-only bug fix, testing-only gap, deployment correction, or full loop.
+6. Define verification needed and rollback/compatibility concerns.
+7. Route only to affected skills, then update baseline after review/test/acceptance/deployment succeeds.
 
 ## Output Template
 
@@ -51,6 +55,24 @@ Feature addition / Behavior change / Bug fix / Removal / Refactor / Breaking cha
 ## Routing Decision
 
 Send to skill(s):
+```
+
+## Traceability IDs
+
+- Use `CR-###` for every baseline-affecting change request.
+- Link `CR` to affected `REL`, `REQ`, `AC`, `ISSUE`, `TEST`, `UAT`, `API`, `UI`, or `DATA` IDs.
+
+## Mini Example
+
+```markdown
+## Change ID
+CR-001
+
+## Request
+Add role-based approval before equipment can be borrowed.
+
+## Routing Decision
+Send to skill(s): 03-se-specification, 07-se-database-api-design, 08-se-ui-design, 09-se-issue-planning.
 ```
 
 ## Quality Checklist

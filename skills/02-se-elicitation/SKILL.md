@@ -1,5 +1,5 @@
 ---
-name: 02-02-se-elicitation
+name: 02-se-elicitation
 description: Menyusun pertanyaan dan menemukan kebutuhan stakeholder. Use when gathering requirements through interviews, surveys, workshops, observation, document analysis, or when project needs are still incomplete, ambiguous, or stakeholder-driven.
 ---
 

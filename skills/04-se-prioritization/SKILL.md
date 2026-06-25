@@ -1,5 +1,5 @@
 ---
-name: 04-04-se-prioritization
+name: 04-se-prioritization
 description: Menentukan prioritas dan menyelesaikan konflik kebutuhan. Use when ordering backlog items, applying MoSCoW or value-risk-effort tradeoffs, resolving stakeholder conflicts, deciding MVP scope, or sequencing work for final-project and enterprise delivery.
 ---
 

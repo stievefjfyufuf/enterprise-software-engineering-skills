@@ -6,15 +6,19 @@ Gunakan saat requirement perlu diperiksa kelengkapan, konsistensi, testability, 
 
 ## Required Inputs
 
-Read the parent SKILL.md first, then confirm the available inputs match the skill purpose. If an input is missing, infer conservatively from project context or list it as an open question.
+- Prioritized requirements, acceptance criteria, and conflict log.
+- Stakeholder feedback or approval notes.
+- Open questions, constraints, and readiness concerns.
 
 ## Step Procedure
 
-1. Review the current project artifact from the previous step.
-2. Identify the smallest useful output this step must produce.
-3. Preserve traceability to stakeholder goals, requirements, issues, tests, or change requests.
-4. Call out enterprise concerns when relevant: risk, ownership, dependency, security, compliance, data integrity, observability, migration, rollback, and maintainability.
-5. Prepare a handoff artifact for the next numbered skill.
+1. Validate each requirement for clarity, completeness, consistency, feasibility, testability, and traceability.
+2. Check that each `AC` can be verified manually or automatically.
+3. Mark each requirement as ready, needs clarification, changed, rejected, or deferred.
+4. Record stakeholder validation notes and decision owner.
+5. If the change is material, create an early change note and route back to elicitation/specification as needed.
+6. Publish a readiness decision before design starts.
+7. Send ready requirements to `06-se-architecture-design`; send unclear items back to `02` or `03`.
 
 ## Output Template
 
@@ -34,6 +38,23 @@ Read the parent SKILL.md first, then confirm the available inputs match the skil
 
 Ready for design: Yes/No
 Reason:
+```
+
+## Traceability IDs
+
+- Keep `REQ`, `NFR`, and `AC` IDs stable.
+- Use `VAL-###` for validation findings.
+- Use `DEC-###` for stakeholder readiness decisions.
+
+## Mini Example
+
+```markdown
+## Issues Found
+- VAL-001: REQ-003 has no measurable acceptance criteria.
+
+## Readiness Decision
+Ready for design: No
+Reason: REQ-003 returns to 03-se-specification; all other MVP requirements are ready.
 ```
 
 ## Quality Checklist

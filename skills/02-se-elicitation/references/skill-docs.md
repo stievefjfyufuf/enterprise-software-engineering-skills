@@ -6,15 +6,19 @@ Gunakan saat perlu menggali kebutuhan dari stakeholder melalui interview, survey
 
 ## Required Inputs
 
-Read the parent SKILL.md first, then confirm the available inputs match the skill purpose. If an input is missing, infer conservatively from project context or list it as an open question.
+- Stakeholder map from step 01.
+- Goals, assumptions, constraints, and open questions.
+- Domain context, existing process notes, or current system screenshots/docs if available.
 
 ## Step Procedure
 
-1. Review the current project artifact from the previous step.
-2. Identify the smallest useful output this step must produce.
-3. Preserve traceability to stakeholder goals, requirements, issues, tests, or change requests.
-4. Call out enterprise concerns when relevant: risk, ownership, dependency, security, compliance, data integrity, observability, migration, rollback, and maintainability.
-5. Prepare a handoff artifact for the next numbered skill.
+1. Group questions by stakeholder ID and goal ID.
+2. Choose elicitation techniques: interview for tacit knowledge, survey for broad preference, workshop for conflict resolution, observation for workflow gaps, document analysis for rules.
+3. Capture raw needs with IDs such as `NEED-001`; do not convert them into technical solutions yet.
+4. Mark each need as explicit, inferred, constraint, pain point, policy/rule, or unresolved.
+5. Record ambiguity, conflicts, missing data, and follow-up questions.
+6. Preserve source traceability from stakeholder or document to each need.
+7. Prepare raw needs and ambiguity/conflict notes for `03-se-specification`.
 
 ## Output Template
 
@@ -39,6 +43,25 @@ Read the parent SKILL.md first, then confirm the available inputs match the skil
 ## Ambiguities
 
 ## Conflicts
+```
+
+## Traceability IDs
+
+- Use `NEED-###` for raw stakeholder needs.
+- Link every `NEED` to `STK`, `GOAL`, or source document.
+- Use `Q-###` for follow-up questions when a decision is blocked.
+
+## Mini Example
+
+```markdown
+## Questions
+- Q-001 for STK-001: Who is allowed to approve an equipment request?
+
+## Raw Needs
+- NEED-001: Lab admin needs to see overdue borrowed equipment. Source: STK-001. Goal: GOAL-001.
+
+## Ambiguities
+- Q-002: Define whether overdue means same day, 24 hours, or scheduled return date.
 ```
 
 ## Quality Checklist

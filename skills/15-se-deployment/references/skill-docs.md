@@ -6,15 +6,19 @@ Gunakan saat release, deployment checklist, migration rollout, smoke test, rollb
 
 ## Required Inputs
 
-Read the parent SKILL.md first, then confirm the available inputs match the skill purpose. If an input is missing, infer conservatively from project context or list it as an open question.
+- Accepted build or release candidate.
+- Test results, acceptance decision, release scope, migration plan, and environment config.
+- Rollback constraints, monitoring expectations, and owner/on-call information when relevant.
 
 ## Step Procedure
 
-1. Review the current project artifact from the previous step.
-2. Identify the smallest useful output this step must produce.
-3. Preserve traceability to stakeholder goals, requirements, issues, tests, or change requests.
-4. Call out enterprise concerns when relevant: risk, ownership, dependency, security, compliance, data integrity, observability, migration, rollback, and maintainability.
-5. Prepare a handoff artifact for the next numbered skill.
+1. Confirm release scope, version/build ID, environment, secrets/config readiness, and migration readiness.
+2. Verify tests and acceptance evidence are current.
+3. Write deployment steps, including prechecks, backup/migration steps, feature flags, and post-deploy checks.
+4. Define rollback plan with trigger conditions and owner.
+5. Run or describe smoke tests for the most important user journeys and health checks.
+6. Record deployment result, incidents, follow-up items, and monitoring signals.
+7. Mark the new baseline with `REL-###`; send production feedback or failures to `16-se-change-log-engineering-loop`.
 
 ## Output Template
 
@@ -41,6 +45,21 @@ Read the parent SKILL.md first, then confirm the available inputs match the skil
 ## Post-Deployment Result
 
 ## New Baseline
+```
+
+## Traceability IDs
+
+- Use `REL-###` for release/deployment markers.
+- Link release scope to `ISSUE`, `REQ`, `TEST`, `UAT`, and `CR` IDs.
+
+## Mini Example
+
+```markdown
+## Release Scope
+REL-001 includes ISSUE-001, REQ-001, AC-001, TEST-001, and UAT-001.
+
+## Rollback Plan
+Revert release tag v1.0.1 and restore pre-migration backup if smoke test S-001 fails.
 ```
 
 ## Quality Checklist

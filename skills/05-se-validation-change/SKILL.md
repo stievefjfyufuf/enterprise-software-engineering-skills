@@ -1,5 +1,5 @@
 ---
-name: 05-05-se-validation-change
+name: 05-se-validation-change
 description: Memeriksa requirement dan menganalisis perubahan awal. Use when validating requirements with stakeholders, checking completeness and consistency, reviewing acceptance criteria, handling early requirement changes, or deciding whether a requirement is ready for design.
 ---
 

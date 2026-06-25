@@ -6,15 +6,19 @@ Gunakan saat backlog requirement perlu diurutkan, MVP ditentukan, atau konflik k
 
 ## Required Inputs
 
-Read the parent SKILL.md first, then confirm the available inputs match the skill purpose. If an input is missing, infer conservatively from project context or list it as an open question.
+- Requirement set with `REQ`, `NFR`, and `AC` IDs.
+- Stakeholder goals and influence.
+- Constraints, deadlines, dependencies, risk notes, and compliance drivers.
 
 ## Step Procedure
 
-1. Review the current project artifact from the previous step.
-2. Identify the smallest useful output this step must produce.
-3. Preserve traceability to stakeholder goals, requirements, issues, tests, or change requests.
-4. Call out enterprise concerns when relevant: risk, ownership, dependency, security, compliance, data integrity, observability, migration, rollback, and maintainability.
-5. Prepare a handoff artifact for the next numbered skill.
+1. Score each requirement by value, risk reduction, urgency, compliance impact, effort, and dependency.
+2. Use MoSCoW or a simple value/risk/effort matrix; state which method is used.
+3. Identify MVP items, next-release items, deferred items, and rejected items.
+4. Resolve or document stakeholder conflicts with rationale and decision owner.
+5. Keep dependency order explicit so implementation does not start before enabling work.
+6. Preserve requirement and acceptance criteria IDs.
+7. Prepare prioritized backlog and conflict log for `05-se-validation-change`.
 
 ## Output Template
 
@@ -34,6 +38,22 @@ Read the parent SKILL.md first, then confirm the available inputs match the skil
 
 | Conflict | Stakeholders | Decision | Rationale |
 |---|---|---|---|
+```
+
+## Traceability IDs
+
+- Keep original `REQ`, `NFR`, and `AC` IDs.
+- Use `DEC-###` for prioritization decisions when a tradeoff or conflict is resolved.
+
+## Mini Example
+
+```markdown
+| Requirement ID | Value | Risk | Effort | Dependency | Priority | Rationale |
+|---|---:|---:|---:|---|---|---|
+| REQ-001 | 5 | 3 | 2 | None | Must | Directly supports GOAL-001 and daily admin workflow |
+
+## Conflict Log
+- DEC-001: Reporting dashboard deferred because approval flow is needed first.
 ```
 
 ## Quality Checklist

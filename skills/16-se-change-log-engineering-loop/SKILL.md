@@ -1,5 +1,5 @@
 ---
-name: 16-16-se-change-log-engineering-loop
+name: 16-se-change-log-engineering-loop
 description: Mencatat perubahan, impact analysis, approved scope, dan menjaga baseline. Use when a PRD, design, codebase, test suite, or deployed app already exists and the user requests a change, bug fix, addition, removal, refactor, scope adjustment, or release correction that must preserve existing baseline artifacts.
 ---
 

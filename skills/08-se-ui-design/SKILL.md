@@ -1,5 +1,5 @@
 ---
-name: 08-08-se-ui-design
+name: 08-se-ui-design
 description: Membuat halaman, navigasi, form, dan wireframe. Use when designing screens, navigation, user flows, form fields, UI states, wireframes, interaction behavior, empty/error/loading states, and acceptance-ready user experience.
 ---
 

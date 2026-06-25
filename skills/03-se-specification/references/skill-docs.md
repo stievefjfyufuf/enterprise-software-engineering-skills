@@ -6,15 +6,19 @@ Gunakan saat kebutuhan mentah perlu diubah menjadi requirement, user story, non-
 
 ## Required Inputs
 
-Read the parent SKILL.md first, then confirm the available inputs match the skill purpose. If an input is missing, infer conservatively from project context or list it as an open question.
+- Raw needs, stakeholder answers, ambiguity list, and conflict notes.
+- Goals and constraints from earlier steps.
+- Domain rules, policies, compliance requirements, and known NFRs.
 
 ## Step Procedure
 
-1. Review the current project artifact from the previous step.
-2. Identify the smallest useful output this step must produce.
-3. Preserve traceability to stakeholder goals, requirements, issues, tests, or change requests.
-4. Call out enterprise concerns when relevant: risk, ownership, dependency, security, compliance, data integrity, observability, migration, rollback, and maintainability.
-5. Prepare a handoff artifact for the next numbered skill.
+1. Convert each valid raw need into one or more testable requirements.
+2. Assign IDs: `REQ-###` for functional requirements, `NFR-###` for non-functional requirements, and `AC-###` for acceptance criteria.
+3. Write requirements with measurable behavior, actor, condition, and expected outcome.
+4. Write NFRs with evaluation method or threshold.
+5. Map each requirement to source `NEED`, `GOAL`, and stakeholder.
+6. Keep unresolved items as open questions instead of inventing certainty.
+7. Prepare the requirement set for `04-se-prioritization`.
 
 ## Output Template
 
@@ -45,6 +49,25 @@ Then [expected result]
 
 | Requirement ID | Goal | Stakeholder | Design/Test Link |
 |---|---|---|---|
+```
+
+## Traceability IDs
+
+- Use `REQ-###` for functional requirements.
+- Use `NFR-###` for measurable quality attributes.
+- Use `AC-###` for acceptance criteria.
+- Every `REQ` should map to at least one `NEED` or `GOAL`.
+
+## Mini Example
+
+```markdown
+| ID | Requirement | Source | Priority | Acceptance Criteria ID |
+|---|---|---|---|---|
+| REQ-001 | The system shall show overdue borrowed equipment to lab admins. | NEED-001, GOAL-001 | TBD | AC-001 |
+
+Given STK-001 opens the inventory dashboard
+When equipment is past its return date
+Then the item appears in an overdue list with borrower and due date.
 ```
 
 ## Quality Checklist

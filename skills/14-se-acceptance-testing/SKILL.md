@@ -1,5 +1,5 @@
 ---
-name: 14-14-se-acceptance-testing
+name: 14-se-acceptance-testing
 description: Menguji alur lengkap pengguna. Use when validating completed work against acceptance criteria, user journeys, UAT checklists, manual verification flows, release readiness, and stakeholder acceptance before deployment.
 ---
 
