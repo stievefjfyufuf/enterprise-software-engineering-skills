@@ -1,5 +1,5 @@
 ---
-name: 11-se-code-review
+name: 11-11-se-code-review
 description: Memeriksa code, test, risiko, dan regresi. Use when reviewing diffs, pull requests, implementation changes, tests, migrations, security risks, performance issues, maintainability concerns, regressions, and missing coverage.
 ---
 
@@ -8,6 +8,11 @@ description: Memeriksa code, test, risiko, dan regresi. Use when reviewing diffs
 ## Purpose
 
 Use this skill to memeriksa code dan test sebelum masuk testing lebih luas.
+
+
+## Skill Docs
+
+For detailed step documentation, templates, checklist, and handoff guidance, read references/skill-docs.md after this file when the user asks for full docs or when the step output needs more structure.
 
 ## Inputs
 
@@ -27,7 +32,7 @@ Review findings ordered by severity, missing tests, regression risks, approval/b
 
 ## Handoff
 
-Jika lolos, lanjut ke se-test-planning. Jika gagal, kembali ke se-implementation.
+Jika lolos, lanjut ke 12-se-test-planning. Jika gagal, kembali ke 10-se-implementation.
 
 ## Quality Rules
 

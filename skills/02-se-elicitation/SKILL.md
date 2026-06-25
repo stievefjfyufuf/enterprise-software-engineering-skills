@@ -1,5 +1,5 @@
 ---
-name: 02-se-elicitation
+name: 02-02-se-elicitation
 description: Menyusun pertanyaan dan menemukan kebutuhan stakeholder. Use when gathering requirements through interviews, surveys, workshops, observation, document analysis, or when project needs are still incomplete, ambiguous, or stakeholder-driven.
 ---
 
@@ -8,6 +8,11 @@ description: Menyusun pertanyaan dan menemukan kebutuhan stakeholder. Use when g
 ## Purpose
 
 Use this skill to menyusun pertanyaan dan menemukan kebutuhan stakeholder.
+
+
+## Skill Docs
+
+For detailed step documentation, templates, checklist, and handoff guidance, read references/skill-docs.md after this file when the user asks for full docs or when the step output needs more structure.
 
 ## Inputs
 
@@ -27,7 +32,7 @@ Question bank, elicitation plan, raw needs, stakeholder answers, unresolved ambi
 
 ## Handoff
 
-Kirim raw needs dan ambiguity list ke se-specification.
+Kirim raw needs dan ambiguity list ke 03-se-specification.
 
 ## Quality Rules
 

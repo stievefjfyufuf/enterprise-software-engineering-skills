@@ -25,6 +25,10 @@ This repository contains 16 Codex skills for an end-to-end software engineering 
 
 Requirement discovery -> specification -> prioritization -> validation -> architecture -> database/API -> UI -> issues -> implementation -> review -> testing -> acceptance -> deployment -> baseline -> controlled change loop.
 
+## Skill Docs
+
+Each numbered skill includes references/skill-docs.md with detailed usage docs, output templates, quality checklist, and handoff guidance for that step.
+
 ## Install
 
 Copy the folders inside `skills/` into your Codex skills directory, for example `~/.codex/skills`.

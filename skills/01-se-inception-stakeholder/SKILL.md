@@ -9,6 +9,11 @@ description: Memahami masalah, tujuan, stakeholder, scope, asumsi, dan pertanyaa
 
 Use this skill to memahami masalah, tujuan, stakeholder, scope, asumsi, dan pertanyaan terbuka.
 
+
+## Skill Docs
+
+For detailed step documentation, templates, checklist, and handoff guidance, read references/skill-docs.md after this file when the user asks for full docs or when the step output needs more structure.
+
 ## Inputs
 
 Ide aplikasi, konteks bisnis, target pengguna, masalah yang ingin diselesaikan, batasan awal.
@@ -27,7 +32,7 @@ Problem statement, stakeholder map, goals, in-scope/out-of-scope, assumptions, o
 
 ## Handoff
 
-Kirim open questions dan stakeholder map ke se-elicitation.
+Kirim open questions dan stakeholder map ke 02-se-elicitation.
 
 ## Quality Rules
 

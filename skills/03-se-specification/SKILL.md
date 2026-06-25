@@ -1,5 +1,5 @@
 ---
-name: 03-se-specification
+name: 03-03-se-specification
 description: Membuat functional requirement, non-functional requirement, user story, dan acceptance criteria. Use when converting elicited needs into structured requirements, PRD sections, user stories, acceptance criteria, constraints, and traceable specification artifacts.
 ---
 
@@ -8,6 +8,11 @@ description: Membuat functional requirement, non-functional requirement, user st
 ## Purpose
 
 Use this skill to membuat requirement terstruktur dan dapat diuji.
+
+
+## Skill Docs
+
+For detailed step documentation, templates, checklist, and handoff guidance, read references/skill-docs.md after this file when the user asks for full docs or when the step output needs more structure.
 
 ## Inputs
 
@@ -27,7 +32,7 @@ Functional requirements, non-functional requirements, user stories, acceptance c
 
 ## Handoff
 
-Kirim requirement set ke se-prioritization.
+Kirim requirement set ke 04-se-prioritization.
 
 ## Quality Rules
 

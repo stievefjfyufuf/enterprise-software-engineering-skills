@@ -1,5 +1,5 @@
 ---
-name: 15-se-deployment
+name: 15-15-se-deployment
 description: Mempublikasikan aplikasi dan memeriksa hasilnya. Use when preparing release, deployment checklist, environment configuration, CI/CD verification, database migration rollout, smoke tests, rollback plan, release notes, and post-deploy validation.
 ---
 
@@ -8,6 +8,11 @@ description: Mempublikasikan aplikasi dan memeriksa hasilnya. Use when preparing
 ## Purpose
 
 Use this skill to mempublikasikan aplikasi dan memeriksa hasilnya.
+
+
+## Skill Docs
+
+For detailed step documentation, templates, checklist, and handoff guidance, read references/skill-docs.md after this file when the user asks for full docs or when the step output needs more structure.
 
 ## Inputs
 
@@ -27,7 +32,7 @@ Deployment checklist, release notes, smoke test result, rollback plan, deploymen
 
 ## Handoff
 
-Jika ada masalah deployment atau feedback produksi, kirim ke se-change-log-engineering-loop.
+Jika ada masalah deployment atau feedback produksi, kirim ke 16-se-change-log-engineering-loop.
 
 ## Quality Rules
 

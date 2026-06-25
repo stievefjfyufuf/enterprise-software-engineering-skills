@@ -1,5 +1,5 @@
 ---
-name: 10-se-implementation
+name: 10-10-se-implementation
 description: Mengerjakan satu issue menjadi code. Use when implementing a selected issue, modifying application code, adding features, fixing bugs, applying migrations, wiring UI/API behavior, or making scoped code changes from an approved task.
 ---
 
@@ -8,6 +8,11 @@ description: Mengerjakan satu issue menjadi code. Use when implementing a select
 ## Purpose
 
 Use this skill to mengerjakan satu issue menjadi perubahan code yang terkontrol.
+
+
+## Skill Docs
+
+For detailed step documentation, templates, checklist, and handoff guidance, read references/skill-docs.md after this file when the user asks for full docs or when the step output needs more structure.
 
 ## Inputs
 
@@ -27,7 +32,7 @@ Scoped code changes, migration if needed, implementation notes, manual verificat
 
 ## Handoff
 
-Kirim diff dan verification notes ke se-code-review.
+Kirim diff dan verification notes ke 11-se-code-review.
 
 ## Quality Rules
 

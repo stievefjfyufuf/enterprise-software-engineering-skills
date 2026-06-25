@@ -1,5 +1,5 @@
 ---
-name: 07-se-database-api-design
+name: 07-07-se-database-api-design
 description: Membuat tabel database, relasi, dan endpoint API. Use when designing ERD, database tables, fields, relationships, constraints, migrations, REST or RPC endpoints, API contracts, request/response schemas, and integration boundaries.
 ---
 
@@ -8,6 +8,11 @@ description: Membuat tabel database, relasi, dan endpoint API. Use when designin
 ## Purpose
 
 Use this skill to membuat database dan api contract yang traceable.
+
+
+## Skill Docs
+
+For detailed step documentation, templates, checklist, and handoff guidance, read references/skill-docs.md after this file when the user asks for full docs or when the step output needs more structure.
 
 ## Inputs
 
@@ -27,7 +32,7 @@ ERD, table list, fields, relationships, indexes, API endpoints, request/response
 
 ## Handoff
 
-Kirim ERD/API contract ke se-ui-design dan se-issue-planning.
+Kirim ERD/API contract ke 08-se-ui-design dan 09-se-issue-planning.
 
 ## Quality Rules
 

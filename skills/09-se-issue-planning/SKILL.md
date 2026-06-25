@@ -1,5 +1,5 @@
 ---
-name: 09-se-issue-planning
+name: 09-09-se-issue-planning
 description: Mengubah requirement menjadi GitHub Issues atau task teknis. Use when breaking validated requirements and designs into implementation issues, tasks, subtasks, labels, dependencies, milestones, sprint backlog, or developer-ready work items.
 ---
 
@@ -8,6 +8,11 @@ description: Mengubah requirement menjadi GitHub Issues atau task teknis. Use wh
 ## Purpose
 
 Use this skill to mengubah requirement dan design menjadi task implementasi.
+
+
+## Skill Docs
+
+For detailed step documentation, templates, checklist, and handoff guidance, read references/skill-docs.md after this file when the user asks for full docs or when the step output needs more structure.
 
 ## Inputs
 
@@ -27,7 +32,7 @@ Issue list, task breakdown, acceptance checklist per issue, dependency map, mile
 
 ## Handoff
 
-Kirim satu issue terpilih ke se-implementation.
+Kirim satu issue terpilih ke 10-se-implementation.
 
 ## Quality Rules
 

@@ -1,5 +1,5 @@
 ---
-name: 06-se-architecture-design
+name: 06-06-se-architecture-design
 description: Menentukan bagian utama aplikasi dan keputusan arsitektur. Use when designing system structure, modules, components, service boundaries, deployment shape, quality attributes, architecture decisions, or tradeoffs before database/API/UI design.
 ---
 
@@ -8,6 +8,11 @@ description: Menentukan bagian utama aplikasi dan keputusan arsitektur. Use when
 ## Purpose
 
 Use this skill to menentukan bagian utama aplikasi dan keputusan arsitektur.
+
+
+## Skill Docs
+
+For detailed step documentation, templates, checklist, and handoff guidance, read references/skill-docs.md after this file when the user asks for full docs or when the step output needs more structure.
 
 ## Inputs
 
@@ -27,7 +32,7 @@ Architecture overview, component map, ADR notes, data flow, integration boundari
 
 ## Handoff
 
-Kirim component map dan data flow ke se-database-api-design.
+Kirim component map dan data flow ke 07-se-database-api-design.
 
 ## Quality Rules
 

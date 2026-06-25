@@ -1,5 +1,5 @@
 ---
-name: 12-se-test-planning
+name: 12-12-se-test-planning
 description: Membuat rencana pengujian. Use when designing test strategy, test scenarios, coverage matrix, test data, risk-based testing, unit/integration/e2e scope, regression checks, and validation plan before writing automated tests.
 ---
 
@@ -8,6 +8,11 @@ description: Membuat rencana pengujian. Use when designing test strategy, test s
 ## Purpose
 
 Use this skill to membuat rencana pengujian yang traceable.
+
+
+## Skill Docs
+
+For detailed step documentation, templates, checklist, and handoff guidance, read references/skill-docs.md after this file when the user asks for full docs or when the step output needs more structure.
 
 ## Inputs
 
@@ -27,7 +32,7 @@ Test strategy, scenario list, coverage matrix, test data, regression checklist.
 
 ## Handoff
 
-Kirim test plan ke se-automated-testing.
+Kirim test plan ke 13-se-automated-testing.
 
 ## Quality Rules
 

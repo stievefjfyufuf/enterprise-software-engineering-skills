@@ -1,5 +1,5 @@
 ---
-name: 04-se-prioritization
+name: 04-04-se-prioritization
 description: Menentukan prioritas dan menyelesaikan konflik kebutuhan. Use when ordering backlog items, applying MoSCoW or value-risk-effort tradeoffs, resolving stakeholder conflicts, deciding MVP scope, or sequencing work for final-project and enterprise delivery.
 ---
 
@@ -8,6 +8,11 @@ description: Menentukan prioritas dan menyelesaikan konflik kebutuhan. Use when 
 ## Purpose
 
 Use this skill to menentukan prioritas dan menyelesaikan konflik kebutuhan.
+
+
+## Skill Docs
+
+For detailed step documentation, templates, checklist, and handoff guidance, read references/skill-docs.md after this file when the user asks for full docs or when the step output needs more structure.
 
 ## Inputs
 
@@ -27,7 +32,7 @@ Prioritized backlog, conflict log, rationale, MVP boundary, deferred items.
 
 ## Handoff
 
-Kirim prioritized backlog dan conflict log ke se-validation-change.
+Kirim prioritized backlog dan conflict log ke 05-se-validation-change.
 
 ## Quality Rules
 

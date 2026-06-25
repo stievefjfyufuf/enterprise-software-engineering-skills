@@ -1,5 +1,5 @@
 ---
-name: 13-se-automated-testing
+name: 13-13-se-automated-testing
 description: Membuat unit test dan integration test. Use when adding or updating automated tests, verifying features or bug fixes, covering API/database/UI logic, improving regression coverage, or running test suites after implementation.
 ---
 
@@ -8,6 +8,11 @@ description: Membuat unit test dan integration test. Use when adding or updating
 ## Purpose
 
 Use this skill to membuat dan menjalankan automated tests yang relevan.
+
+
+## Skill Docs
+
+For detailed step documentation, templates, checklist, and handoff guidance, read references/skill-docs.md after this file when the user asks for full docs or when the step output needs more structure.
 
 ## Inputs
 
@@ -27,7 +32,7 @@ Unit tests, integration tests, test run results, coverage notes, failures and fi
 
 ## Handoff
 
-Jika tests lolos, lanjut ke se-acceptance-testing. Jika gagal karena bug, kembali ke se-implementation.
+Jika tests lolos, lanjut ke 14-se-acceptance-testing. Jika gagal karena bug, kembali ke 10-se-implementation.
 
 ## Quality Rules
 

@@ -1,5 +1,5 @@
 ---
-name: 05-se-validation-change
+name: 05-05-se-validation-change
 description: Memeriksa requirement dan menganalisis perubahan awal. Use when validating requirements with stakeholders, checking completeness and consistency, reviewing acceptance criteria, handling early requirement changes, or deciding whether a requirement is ready for design.
 ---
 
@@ -8,6 +8,11 @@ description: Memeriksa requirement dan menganalisis perubahan awal. Use when val
 ## Purpose
 
 Use this skill to memeriksa requirement dan menganalisis perubahan awal.
+
+
+## Skill Docs
+
+For detailed step documentation, templates, checklist, and handoff guidance, read references/skill-docs.md after this file when the user asks for full docs or when the step output needs more structure.
 
 ## Inputs
 
@@ -27,7 +32,7 @@ Validated requirement set, rejected/changed items, issue list, readiness decisio
 
 ## Handoff
 
-Jika valid, kirim ke se-architecture-design. Jika belum, kembali ke se-elicitation atau se-specification.
+Jika valid, kirim ke 06-se-architecture-design. Jika belum, kembali ke 02-se-elicitation atau 03-se-specification.
 
 ## Quality Rules
 

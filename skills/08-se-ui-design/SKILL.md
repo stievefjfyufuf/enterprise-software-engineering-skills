@@ -1,5 +1,5 @@
 ---
-name: 08-se-ui-design
+name: 08-08-se-ui-design
 description: Membuat halaman, navigasi, form, dan wireframe. Use when designing screens, navigation, user flows, form fields, UI states, wireframes, interaction behavior, empty/error/loading states, and acceptance-ready user experience.
 ---
 
@@ -8,6 +8,11 @@ description: Membuat halaman, navigasi, form, dan wireframe. Use when designing 
 ## Purpose
 
 Use this skill to membuat rancangan ui yang sesuai kebutuhan pengguna.
+
+
+## Skill Docs
+
+For detailed step documentation, templates, checklist, and handoff guidance, read references/skill-docs.md after this file when the user asks for full docs or when the step output needs more structure.
 
 ## Inputs
 
@@ -27,7 +32,7 @@ Screen list, navigation flow, form specs, wireframe description, UI states, vali
 
 ## Handoff
 
-Kirim UI flow dan screen specs ke se-issue-planning.
+Kirim UI flow dan screen specs ke 09-se-issue-planning.
 
 ## Quality Rules
 

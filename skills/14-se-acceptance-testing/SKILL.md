@@ -1,5 +1,5 @@
 ---
-name: 14-se-acceptance-testing
+name: 14-14-se-acceptance-testing
 description: Menguji alur lengkap pengguna. Use when validating completed work against acceptance criteria, user journeys, UAT checklists, manual verification flows, release readiness, and stakeholder acceptance before deployment.
 ---
 
@@ -8,6 +8,11 @@ description: Menguji alur lengkap pengguna. Use when validating completed work a
 ## Purpose
 
 Use this skill to menguji apakah user flow lengkap diterima.
+
+
+## Skill Docs
+
+For detailed step documentation, templates, checklist, and handoff guidance, read references/skill-docs.md after this file when the user asks for full docs or when the step output needs more structure.
 
 ## Inputs
 
@@ -27,7 +32,7 @@ UAT checklist, pass/fail result, evidence, accepted/rejected decision, feedback 
 
 ## Handoff
 
-Jika diterima, lanjut ke se-deployment. Jika ditolak, kirim feedback ke se-change-log-engineering-loop.
+Jika diterima, lanjut ke 15-se-deployment. Jika ditolak, kirim feedback ke 16-se-change-log-engineering-loop.
 
 ## Quality Rules
 
