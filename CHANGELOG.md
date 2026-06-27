@@ -4,6 +4,9 @@ All notable changes to this skill pack should be documented in this file.
 
 ## Unreleased
 
+- Require every executing workflow to persist a verified Markdown artifact under `docs/software-engineering/` instead of relying on chat-only output.
+- Add canonical filenames for steps 01-16, companion implementation/testing records, and per-request `changes/CR-###.md` history.
+- Extend validation to require artifact persistence, verification, and saved-path handoff rules in all skills.
 - Strengthen all skill entry points so they require reading `references/skill-docs.md` before producing artifacts.
 - Deepen all 16 agent prompts while keeping them concise and focused on traceability, quality gates, risk, verification, and handoff.
 - Expand local validation to check root project files, agent prompt depth, required docs usage, example completeness, placeholder text, and example traceability prefixes.

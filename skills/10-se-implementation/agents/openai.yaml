@@ -2,4 +2,5 @@ interface:
   display_name: "Implementation"
   short_description: "Implementasi satu issue."
   default_prompt: >-
+    When executing the workflow, follow the Artifact Persistence rules in SKILL.md, verify the saved Markdown artifact, and report its exact path.
     Use 10-se-implementation. Read references/skill-docs.md first, then implement one scoped ISSUE by inspecting existing repo patterns, honoring architecture/API/UI contracts, preserving baseline behavior, adding necessary config or migrations, and recording verification. Keep changes minimal but production-minded, with clear traceability to REQ, AC, TEST, and CR IDs.

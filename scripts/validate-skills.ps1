@@ -35,6 +35,7 @@ $requiredSkillSections = @(
     '## Inputs',
     '## Workflow',
     '## Output',
+    '## Artifact Persistence',
     '## Handoff',
     '## Quality Rules'
 )
@@ -87,6 +88,22 @@ foreach ($skill in $skills) {
         if ($text -notmatch 'Before producing this skill''s artifact, read `references/skill-docs\.md`') {
             $errors.Add("$($skill.Name): SKILL.md must require reading references/skill-docs.md before producing output.")
         }
+
+        if ($text -notmatch 'docs/software-engineering/') {
+            $errors.Add("$($skill.Name): SKILL.md must define a runtime artifact path under docs/software-engineering/.")
+        }
+
+        if ($text -notmatch '(?i)Do not treat a chat response as the final artifact') {
+            $errors.Add("$($skill.Name): SKILL.md must state that chat-only output is not the final artifact.")
+        }
+
+        if ($text -notmatch '(?i)Reopen (the|both) saved') {
+            $errors.Add("$($skill.Name): SKILL.md must require verifying the persisted artifact.")
+        }
+
+        if ($text -notmatch '(?i)source of truth') {
+            $errors.Add("$($skill.Name): SKILL.md must use the saved artifact as the handoff source of truth.")
+        }
     }
 
     if (Test-Path $docsPath) {
@@ -108,6 +125,10 @@ foreach ($skill in $skills) {
 
         if ($agent -notmatch 'references/skill-docs\.md') {
             $errors.Add("$($skill.Name): agents/openai.yaml default_prompt should require reading references/skill-docs.md.")
+        }
+
+        if ($agent -notmatch 'Artifact Persistence') {
+            $errors.Add("$($skill.Name): agents/openai.yaml default_prompt should require persisted artifact handling.")
         }
 
         $promptMatch = [regex]::Match($agent, '(?s)default_prompt:\s*(.*)$')

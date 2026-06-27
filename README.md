@@ -40,6 +40,35 @@ Recommended sequence:
 
 You can skip a step only when its artifact already exists and is current. When skipping, note the artifact used as the source of truth.
 
+## Runtime Artifact Persistence
+
+When a skill executes its workflow, it must write the completed artifact into the user's project. A response shown only in chat is not a completed workflow artifact. Explanation-only and review-only requests remain read-only unless the user authorizes artifact creation.
+
+The canonical runtime artifact directory is `docs/software-engineering/`:
+
+| Step | Saved artifact |
+|---|---|
+| 01 | `01-inception.md` |
+| 02 | `02-elicitation.md` |
+| 03 | `03-specification.md` |
+| 04 | `04-prioritization.md` |
+| 05 | `05-validation-change.md` |
+| 06 | `06-architecture-design.md` |
+| 07 | `07-database-api-design.md` |
+| 08 | `08-ui-design.md` |
+| 09 | `09-issue-planning.md` |
+| 10 | `10-implementation.md` |
+| 11 | `11-code-review.md` |
+| 12 | `12-test-planning.md` |
+| 13 | `13-automated-testing.md` |
+| 14 | `14-acceptance-testing.md` |
+| 15 | `15-deployment.md` |
+| 16 | `16-change-request.md` plus `changes/CR-###.md` |
+
+Each executing skill must create the directory when needed, write its Markdown artifact, reopen it to verify persistence, report the exact path, and use that saved path as the source of truth for handoff. Step 10 also changes source code, step 13 also creates or updates automated tests, and their Markdown files are companion evidence records rather than replacements for code or tests.
+
+Approved baseline artifacts must not be silently overwritten. Route baseline-affecting revisions through step 16, preserve prior change history, and store detailed change requests under `docs/software-engineering/changes/`.
+
 ## Traceability ID Standard
 
 Use stable IDs across all artifacts so Codex can connect goals, requirements, issues, code, tests, releases, and changes:

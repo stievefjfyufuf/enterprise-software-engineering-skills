@@ -30,6 +30,14 @@ Ide aplikasi, konteks bisnis, target pengguna, masalah yang ingin diselesaikan, 
 
 Problem statement, stakeholder map, goals, in-scope/out-of-scope, assumptions, open questions.
 
+## Artifact Persistence
+
+- When executing this workflow, save the completed Markdown artifact to `docs/software-engineering/01-inception.md` in the user's project.
+- Create `docs/software-engineering/` when it does not exist. Do not treat a chat response as the final artifact.
+- Reopen the saved file to verify it exists and contains the completed output, then report its exact path to the user.
+- Preserve an approved baseline unless a change is authorized and recorded through `16-se-change-log-engineering-loop`.
+- Use the saved file as the source of truth for the handoff. If the user requests explanation or review only, do not create or modify the artifact.
+
 ## Handoff
 
 Kirim open questions dan stakeholder map ke 02-se-elicitation.

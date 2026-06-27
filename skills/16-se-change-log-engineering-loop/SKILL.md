@@ -33,6 +33,14 @@ User change request, current baseline, PRD/design/code/test/deployment artifacts
 
 Change request, impact analysis, approval gate, change log, approved scope, affected artifacts, verification plan, rollback/compatibility notes, routing decision.
 
+## Artifact Persistence
+
+- When executing this workflow, save the change-control index to `docs/software-engineering/16-change-request.md` and each detailed request to `docs/software-engineering/changes/CR-###.md` using its assigned CR ID.
+- Create both directories when they do not exist. Do not treat a chat response as the final artifact.
+- Append or update the matching CR entry without deleting earlier history or overwriting an approved baseline.
+- Reopen both saved files to verify the CR ID, before/after behavior, impact, approval, scope, verification, rollback, and routing are recorded, then report their exact paths.
+- Use the saved CR file as the source of truth for routed work. If the user requests explanation or review only, do not create or modify the artifacts.
+
 ## Handoff
 
 Kirim approved scope ke skill terdampak: specification, design, issue planning, implementation, testing, atau deployment.

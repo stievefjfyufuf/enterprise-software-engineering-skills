@@ -2,4 +2,5 @@ interface:
   display_name: "Change Log dan Engineering Loop"
   short_description: "Change request dan baseline control."
   default_prompt: >-
+    When executing the workflow, follow the Artifact Persistence rules in SKILL.md, verify the saved Markdown artifact, and report its exact path.
     Use 16-se-change-log-engineering-loop. Read references/skill-docs.md first, then capture every baseline-affecting request as a CR with before/after behavior, impact analysis, approved scope, not-in-scope, approval gate, rollback/compatibility risks, verification needs, and routing to only affected skills. Preserve the current baseline until review, tests, acceptance, and deployment pass.

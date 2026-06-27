@@ -30,6 +30,14 @@ Requirement set, stakeholder goals, constraints, deadlines, risks.
 
 Prioritized backlog, conflict log, rationale, MVP boundary, deferred items.
 
+## Artifact Persistence
+
+- When executing this workflow, save the completed Markdown artifact to `docs/software-engineering/04-prioritization.md` in the user's project.
+- Create `docs/software-engineering/` when it does not exist. Do not treat a chat response as the final artifact.
+- Reopen the saved file to verify it exists and contains the completed output, then report its exact path to the user.
+- Preserve an approved baseline unless a change is authorized and recorded through `16-se-change-log-engineering-loop`.
+- Use the saved file as the source of truth for the handoff. If the user requests explanation or review only, do not create or modify the artifact.
+
 ## Handoff
 
 Kirim prioritized backlog dan conflict log ke 05-se-validation-change.
