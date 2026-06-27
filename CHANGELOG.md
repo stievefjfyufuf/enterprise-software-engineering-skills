@@ -4,6 +4,7 @@ All notable changes to this skill pack should be documented in this file.
 
 ## Unreleased
 
+- Update local installation instructions from the legacy `.codex/skills` path to Codex's current user and repository `.agents/skills` locations, with a validator regression check.
 - Fix pre-baseline UAT rejection routing so defects return to affected implementation/design work instead of incorrectly entering baseline change control.
 - Require explicit authorization and a named environment before deployment execution against live or shared targets.
 - Repair the campus example's stable question IDs and add the missing issue/return lifecycle, borrowing record, API/UI contracts, tests, UAT, and release traceability needed by the overdue workflow.

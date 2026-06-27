@@ -250,6 +250,15 @@ foreach ($skill in $skills) {
 }
 
 $readme = Get-Content $readmePath -Raw
+if ($readme -notmatch [regex]::Escape('~/.agents/skills')) {
+    $errors.Add('README install instructions must include the current user skill path ~/.agents/skills.')
+}
+if ($readme -notmatch [regex]::Escape('<repo>/.agents/skills')) {
+    $errors.Add('README install instructions must include the repository skill path <repo>/.agents/skills.')
+}
+if ($readme -match '(?i)\.codex[/\\]skills') {
+    $errors.Add('README install instructions contain the legacy .codex/skills path; use .agents/skills.')
+}
 $registeredPrefixes = [regex]::Matches($readme, '\| `([A-Z]+)` \|') | ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique
 $usedPrefixes = New-Object System.Collections.Generic.HashSet[string]
 

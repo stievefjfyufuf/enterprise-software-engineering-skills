@@ -141,16 +141,17 @@ See `examples/test-prompts.md` for quick prompts that can be used after installi
 
 ## Install
 
-Copy the folders inside `skills/` into your Codex skills directory, for example `~/.codex/skills`.
+For user-wide local use, copy the folders inside `skills/` into `~/.agents/skills`. For repository-scoped use, copy them into `<repo>/.agents/skills`.
 
 After copying, restart Codex or reload skills if your environment requires it. The skill folder name and the `name:` field inside each `SKILL.md` are intentionally the same.
 
 Common install locations:
 
-| Environment | Skill directory |
-|---|---|
-| Windows | `%USERPROFILE%\.codex\skills` |
-| macOS/Linux | `~/.codex/skills` |
+| Scope | Environment | Skill directory |
+|---|---|---|
+| User | Windows | `%USERPROFILE%\.agents\skills` |
+| User | macOS/Linux | `~/.agents/skills` |
+| Repository | All | `<repo>/.agents/skills` |
 
 After install, use one of the example prompts to confirm the skill appears in Codex. If a skill does not appear, confirm the copied folder contains `SKILL.md` at its root and restart Codex.
 
